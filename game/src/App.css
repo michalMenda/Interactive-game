@@ -1,0 +1,21 @@
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.resetGame {
+  z-index: 1;
+  margin-top: 1em;
+  width: 10vw;
+  height: 3vw;
+  margin-right: 7em;
+}
+
+.newGame {
+  z-index: 1;
+  margin-right: 15em;
+  margin-top: 0.5em;
+}

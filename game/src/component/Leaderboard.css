@@ -1,0 +1,50 @@
+  .leaderboard {
+    text-align: center;
+    color: black;
+    padding: 20px;
+    background-color: #92bcc0;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+  }
+
+  .leaderboard h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .leaderboard ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .leaderboard li {
+    font-size: 18px;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+  }
+
+  .place-1 {
+    background-color: gold;
+    color: #333;
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+
+  .place-2 {
+    background-color: silver;
+    color: #333;
+  }
+
+  .place-3 {
+    background-color: #cd7f32;
+    color: #333;
+  }
+
+  .leaderboard li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }

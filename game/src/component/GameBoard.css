@@ -1,0 +1,148 @@
+.player-board h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.game-board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* קוביות השחקנים */
+.player-board {
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #ddd;
+  /* גבול עדין */
+  margin: 10px;
+  width: 220px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  /* קוביה לבנה */
+  transition: border-color 0.3s ease;
+  /* מעבר עדין לשינוי צבע המסגרת */
+}
+
+/* קוביה פעילה (תור) */
+.player-board.active {
+  border-color: #1976D2;
+  /* צבע כחול כהה כשהשחקן בתור */
+  background-color: #e3f2fd;
+  /* צבע רקע בהיר כשזה תורו */
+}
+
+/* צבעים שונים לכל שחקן */
+.player-board:nth-child(1) {
+  background-color: #e0e0e0;
+  /* צבע רקע אפור בהיר */
+}
+
+.player-board:nth-child(2) {
+  background-color: #e8f5e9;
+  /* ירוק בהיר */
+}
+
+.player-board:nth-child(3) {
+  background-color: #fff3e0;
+  /* כתום בהיר */
+}
+
+.player-board:nth-child(4) {
+  background-color: #fce4ec;
+  /* ורוד פסטל */
+}
+
+.player-board:nth-child(5) {
+  background-color: #e1bee7;
+  /* סגול פסטל */
+}
+
+.player-board:nth-child(6) {
+  background-color: #ffecb3;
+  /* צהוב פסטל */
+}
+
+/* כפתורים */
+button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: 2px solid #1976D2;
+  /* גבול כחול כהה */
+  border-radius: 5px;
+  background-color: #ffffff;
+  /* רקע לבן */
+  color: #1976D2;
+  /* צבע כפתור כחול כהה */
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1976D2;
+  /* רקע כחול כהה בהעברה על כפתור */
+  color: #ffffff;
+  /* טקסט לבן על רקע כחול */
+}
+
+/* כפתור כאשר הוא לא פעיל */
+button:disabled {
+  background-color: #e0e0e0;
+  /* אפור בהיר */
+  color: #b0b0b0;
+  /* צבע טקסט אפור כהה */
+  border: 2px solid #b0b0b0;
+}
+
+/* לוח המובילים */
+.leaderboard {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* מודל עם תיבת פופ-אפ */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 80%;
+}
+
+.modal button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #FF9800;
+  /* כתום חמים */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #e68900;
+  /* גוון כהה יותר של כתום */
+}

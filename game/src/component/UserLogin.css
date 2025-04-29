@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: "Assistant", Arial, sans-serif;
+  background: linear-gradient(to bottom, #a2d9ff, #ffffff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* קונטיינר הטופס */
+.userLoginContainer {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  /* margin-top: 500px; */
+}
+
+/* כותרת */
+.userLoginContainer h2 {
+  color: #007acc;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* קבוצת השדות */
+.playerBoard {
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+/* שדות הקלט */
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* שדות הקלט: מעבר עליהם */
+.inputField:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
+
+/* כפתור שליחה */
+.submit {
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* כפתור שליחה: מעבר ולחיצה */
+.submit:hover {
+  background: #005f99;
+}
+
+.submit:active {
+  transform: scale(0.95);
+}
+
+/* הודעות */
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 8px;
+  color:#f44336;
+}
+
+.message.success {
+  background: #4caf50;
+}
+
+.message.error {
+  background: #f44336;
+}
+
+/* טקסט החלפה בין התחברות להרשמה */
+.toggleAuth {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.toggleAuth span {
+  color: #007acc;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.toggleAuth span:hover {
+  color: #005f99;
+}
+
+/* אפקט אנימציה */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
